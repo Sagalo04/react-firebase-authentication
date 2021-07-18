@@ -12,7 +12,7 @@ const Navigation = () => (
       authUser ? (
         <NavigationAuth authUser={authUser} />
       ) : (
-        <NavigationNonAuth />
+        <span></span>
       )
     }
   </AuthUserContext.Consumer>
@@ -40,7 +40,7 @@ const NavigationAuth = ({ authUser }) => (
   </ul>
 );
 
-const NavigationNonAuth = () => (
+/*const NavigationNonAuth = () => (
   <ul>
     <li>
       <Link to={ROUTES.LANDING}>Landing</Link>
@@ -49,6 +49,6 @@ const NavigationNonAuth = () => (
       <Link to={ROUTES.SIGN_IN}>Sign In</Link>
     </li>
   </ul>
-);
+);*/
 
 export default Navigation;
